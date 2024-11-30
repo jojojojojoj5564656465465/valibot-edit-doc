@@ -31,3 +31,20 @@ const result = v.isOfType<TType, TObject>(type, object);
 ## Returns
 
 - `result` <Property {...properties.result} />
+
+## Examples
+
+The following example show how `isOfType` can be used.
+
+```ts
+import * as v from 'valibot';
+
+const obj = {
+  type: "person",
+  name: "john",
+
+}
+
+const result = v.isOfType('person', obj);
+console.log(result); // true
+```
